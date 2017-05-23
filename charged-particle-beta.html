@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Charged Particle Beta</title>
+		<!--Importing the CSS-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/css/materialize.min.css">
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!--Importing the Javascript-->
+		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/js/materialize.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	</head>
+	<body>
+		<main>
+		    <div class="container">
+			<div class="center">
+				<form id="values" onsubmit="return refresh();">
+				<div class="row">
+					<div class="input-field col s3">
+						<button class="btn waves-effect waves-light" id="refresh-button" type="submit" >Refresh<i class="material-icons right">cached</i> </button>
+					</div>
+					<div class="input-field col s2">
+						<button class="btn waves-effect waves-light" id="play"><i class="material-icons ">play_arrow</i> </button>
+					</div>
+					<div class="input-field col s2">
+						<button class="btn waves-effect waves-light" id="stop"><i class="material-icons ">stop</i> </button>
+					</div>
+					<div class="col s3">
+						Draw Path:	
+						<div class="switch">
+						    <label>
+						      Off
+						      <input type="checkbox" id="path">
+						      <span class="lever"></span>
+						      On
+						    </label>
+						</div>
+					</div>
+
+				</div>
+				<canvas id="canvas1"></canvas>
+				<div class="row" >
+					<div class="col s3">
+						Magnetic Field:
+						<div class="switch">
+						    <label>
+						      Off
+						      <input onclick="mfToggle()" type="checkbox" id="mf-status">
+						      <span class="lever"></span>
+						      On
+						    </label>
+						</div>
+					</div>
+					<div class="col s3">
+						Magnetic Field:
+						<div class="switch">
+						    <label>
+						      In
+						      <input onclick="mfToggleDirection()" type="checkbox" id="mf-direction">
+						      <span class="lever"></span>
+						      Out
+						    </label>
+						</div>
+					</div>
+					<div class="col s3">
+						Electric Field:
+						<div class="switch">
+						    <label>
+						      Off
+						      <input onclick="efToggle()" type="checkbox" id="ef-status">
+						      <span class="lever"></span>
+						      On
+						    </label>
+						</div> 
+					</div>
+					<div class="col s3">
+						Electric Field:
+						<div class="switch">
+						    <label>
+						      Up
+						      <input onclick="efToggleDirection()" type="checkbox" id="ef-direction">
+						      <span class="lever"></span>
+						      Down
+						    </label>
+						</div> 
+					</div>
+
+				</div>
+				<div class="row">
+					<div class="input-field col s3">
+						<input placeholder="Tesla" id="mf-field-strength" type="number" step="any" class="validate" value = "1E-8">
+						<label class="active" for="mf-field-strength">Magnetic Field Strength</label>
+					</div>
+					<div class="input-field col s3">
+						<input placeholder="KG" id="mass" type="number" step="any" class="validate" value = "9.11E-31">
+						<label class="active"  for="mass">Mass of particle</label>
+					</div>
+					<div class="input-field col s3">
+						<input placeholder="N/C" id="ef-field-strength" type="number" step="any" class="validate" value = "0.05">
+						<label class="active" for="ef-field-strength">Electric Field Strength</label>
+					</div>
+					<div class="input-field col s3">
+						<input placeholder="Coloumbs" id="charge" type="number" step="any" class="validate" value = "-1.60E-19">
+						<label class="active" for="charge">Charge of particle</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s3">
+						<input placeholder="m/s" id="initial-speed" type="number" step="any" class="validate" value = "5E6">
+						<label class="active" for="initial-speed">Inital Velocity of Particle</label>
+					</div>
+					<div class="input-field col s3">
+						<input placeholder="s" id="timestep" type="number" step="any" class="validate" value = "1E-6">
+						<label class="active" for="timestep">Time step per frame</label>
+					</div>
+				</div>
+				</form>
+						
+			</div>
+		    </div>
+		<script src="motion.js">
+		</script>
+		</main>
+		<footer>
+		    <div class="container">
+			<h6 class="center-align">2015 David Swarbrick</h6>
+		    </div>
+		</footer>
+	</body>
+</html>
+
