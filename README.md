@@ -13,7 +13,7 @@ The basic equations governing the system are:
 
 ![Governing equations](img/acc-eq.jpg)
 
-Where we define a and be to be:
+Where we define a and b to be:
 
 ![Defining a and b](img/a-and-b-eq.jpg)
 
