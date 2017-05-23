@@ -1,4 +1,4 @@
-//This is the javascript associated with the webpage 'charged-particle-beta.html'.
+//This is the javascript associated with the webpage 'particle-demo.html'.
 //Written by David Swarbrick, Manchester Grammar School, Nov 2015
 //Continued by David Swarbrick, University of Cambridge, May 2017
 
