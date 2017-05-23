@@ -10,13 +10,13 @@ The colour of the particle is used to represent its charge:
 The default values of the simulation are used to show an example curved path, however they are unrealistic at the moment. Realistic values will be added in an update shortly.
 
 The basic equations governing the system are:
-![Governing equations](img/acc-eq.png)
+![Governing equations](img/acc-eq.jpg)
 
 Where we define a and be to be:
-![Defining a and b](img/a-and-b-eq.png)
+![Defining a and b](img/a-and-b-eq.jpg)
 
 These give the solution:
-![Solution](img/x-and-y-eq.png)
+![Solution](img/x-and-y-eq.jpg)
 
 Where the constants of integration (to give the correct starting points for x and y) can be found from:
-![Constants of integration](img/const-eq.png)
+![Constants of integration](img/const-eq.jpg)
