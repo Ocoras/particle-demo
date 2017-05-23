@@ -2,6 +2,8 @@
 An HTML demo of a charged particle travelling through magnetic and electric fields.
 The main file (particle-demo.html) displays a simulation that runs in the web browser, showing a particle as it moves through electric and magnetic fields.
 
+The program can be run in the browser [here](https://ocoras.github.io/particle-demo/particle-demo.html).
+
 The colour of the particle is used to represent its charge:
 - Red : Positively charged
 - Blue : Negatively charged
