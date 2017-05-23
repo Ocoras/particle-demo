@@ -26,7 +26,7 @@
 						<button class="btn waves-effect waves-light" id="stop"><i class="material-icons ">stop</i> </button>
 					</div>
 					<div class="col s3">
-						Draw Path:	
+						Draw Path:
 						<div class="switch">
 						    <label>
 						      Off
@@ -71,7 +71,7 @@
 						      <span class="lever"></span>
 						      On
 						    </label>
-						</div> 
+						</div>
 					</div>
 					<div class="col s3">
 						Electric Field:
@@ -82,13 +82,13 @@
 						      <span class="lever"></span>
 						      Down
 						    </label>
-						</div> 
+						</div>
 					</div>
 
 				</div>
 				<div class="row">
 					<div class="input-field col s3">
-						<input placeholder="Tesla" id="mf-field-strength" type="number" step="any" class="validate" value = "1E-8">
+						<input placeholder="Tesla" id="mf-field-strength" type="number" step="any" class="validate" value = "3E-4">
 						<label class="active" for="mf-field-strength">Magnetic Field Strength</label>
 					</div>
 					<div class="input-field col s3">
@@ -96,7 +96,7 @@
 						<label class="active"  for="mass">Mass of particle</label>
 					</div>
 					<div class="input-field col s3">
-						<input placeholder="N/C" id="ef-field-strength" type="number" step="any" class="validate" value = "0.05">
+						<input placeholder="N/C" id="ef-field-strength" type="number" step="any" class="validate" value = "0.1">
 						<label class="active" for="ef-field-strength">Electric Field Strength</label>
 					</div>
 					<div class="input-field col s3">
@@ -106,16 +106,16 @@
 				</div>
 				<div class="row">
 					<div class="input-field col s3">
-						<input placeholder="m/s" id="initial-speed" type="number" step="any" class="validate" value = "5E6">
+						<input placeholder="m/s" id="initial-speed" type="number" step="any" class="validate" value = "10000E6">
 						<label class="active" for="initial-speed">Inital Velocity of Particle</label>
 					</div>
 					<div class="input-field col s3">
-						<input placeholder="s" id="timestep" type="number" step="any" class="validate" value = "1E-6">
+						<input placeholder="s" id="timestep" type="number" step="any" class="validate" value = "1E-9">
 						<label class="active" for="timestep">Time step per frame</label>
 					</div>
 				</div>
 				</form>
-						
+
 			</div>
 		    </div>
 		<script src="motion.js">
@@ -128,4 +128,3 @@
 		</footer>
 	</body>
 </html>
-
